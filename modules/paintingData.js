@@ -8,14 +8,13 @@ export const paintingData = [
     position: { x: -20 + 10 * i, y: 2, z: -19.5 }, // position of the painting
     rotationY: 0, // rotation of the painting
     info: {
-      // info about the painting
-      title: `Van Gogh ${i + 1}`,
+      // info about the painting      title: `Van Gogh ${i + 1}`,
       artist: "Vincent van Gogh",
       description: `This is one of the masterpieces by Vincent van Gogh, showcasing his unique style and emotional honesty. Artwork ${
         i + 1
       } perfectly encapsulates his love for the beauty of everyday life.`,
       year: `Year ${i + 1}`,
-      link: "https://github.com/theringsofsaturn",
+      link: "https://github.com/grp-ArtiTechs",
     },
   })),
   // Back Wall
@@ -25,14 +24,13 @@ export const paintingData = [
     height: 3,
     position: { x: -20 + 10 * i, y: 2, z: 19.5 },
     rotationY: Math.PI,
-    info: {
-      title: `Van Gogh ${i + 6}`,
+    info: {      title: `Van Gogh ${i + 6}`,
       artist: "Vincent van Gogh",
       description: `Artwork ${
         i + 6
       } by Vincent van Gogh is an exceptional piece showcasing his remarkable ability to capture emotion and atmosphere.`,
       year: `Year ${i + 6}`,
-      link: "https://github.com/theringsofsaturn",
+      link: "https://github.com/grp-ArtiTechs",
     },
   })),
   // Left Wall
@@ -42,14 +40,13 @@ export const paintingData = [
     height: 3,
     position: { x: -19.5, y: 2, z: -15 + 10 * i },
     rotationY: Math.PI / 2,
-    info: {
-      title: `Van Gogh ${i + 11}`,
+    info: {      title: `Van Gogh ${i + 11}`,
       artist: "Vincent van Gogh",
       description: `With its striking use of color and brushwork, Artwork ${
         i + 11
       } is a testament to Van Gogh's artistic genius.`,
       year: `Year ${i + 11}`,
-      link: "https://github.com/theringsofsaturn",
+      link: "https://github.com/grp-ArtiTechs",
     },
   })),
   // Right Wall
@@ -59,14 +56,13 @@ export const paintingData = [
     height: 3,
     position: { x: 19.5, y: 2, z: -15 + 10 * i },
     rotationY: -Math.PI / 2,
-    info: {
-      title: `Van Gogh ${i + 15}`,
+    info: {      title: `Van Gogh ${i + 15}`,
       artist: "Vincent van Gogh",
       description: `Artwork ${
         i + 15
       } is a captivating piece by Vincent van Gogh, reflecting his distinctive style and deep passion for art.`,
       year: `Year ${i + 15}`,
-      link: "https://github.com/theringsofsaturn",
+      link: "https://github.com/grp-ArtiTechs",
     },
   })),
 ];
