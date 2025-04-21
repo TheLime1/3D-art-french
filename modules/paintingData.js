@@ -1,3 +1,26 @@
+// Function to get unique description for each painting
+function getDescriptionById(id) {
+  const descriptions = {
+    1: "Peinte en 1888 à Arles, 'La Maison Jaune' représente la demeure que Van Gogh avait louée, symbole d'espoir et de communauté artistique. Les couleurs vives et les contrastes révèlent son attachement à ce lieu qu'il considérait comme un refuge créatif.",
+    2: "Dans cette œuvre de 1888, Van Gogh capture la magie de la 'Nuit étoilée sur le Rhône' avec ses reflets lumineux dansant sur l'eau. Le ciel nocturne et les étoiles scintillantes témoignent de sa fascination pour les paysages nocturnes d'Arles.",
+    3: "Peinte en 1890 à Saint-Rémy, 'À la porte de l'éternité' révèle l'angoisse existentielle de l'artiste. Cette figure solitaire assise, le visage dans les mains, exprime la douleur et la contemplation profonde de la fin de la vie.",
+    4: "Le célèbre 'Champ de blé aux corbeaux', réalisé peu avant sa mort en 1890, est imprégné d'une tension dramatique. Le chemin sinueux, le ciel tourmenté et les oiseaux menaçants créent une atmosphère prémonitoire qui touche profondément le spectateur.",
+    5: "Dans 'Terrasse du café le soir', Van Gogh immortalise la Place du Forum à Arles (1888) illuminée sous un ciel étoilé. Les couleurs chaudes et l'atmosphère conviviale contrastent avec sa solitude personnelle, créant une scène à la fois accueillante et mélancolique.",
+    6: "Avec 'La Chambre à Arles' (1888), Van Gogh ouvre une fenêtre sur son intimité. Chaque élément du mobilier simple, aux couleurs vives et aux perspectives légèrement déformées, raconte sa quête de paix intérieure et de stabilité.",
+    7: "'Le Café de nuit' (1888) dépeint l'ambiance inquiétante d'un établissement d'Arles que l'artiste décrivait comme un lieu 'où l'on peut se ruiner, devenir fou, commettre des crimes'. Les couleurs intenses et contrastées traduisent cette atmosphère oppressante.",
+    8: "Dans 'Champ de blé sous un ciel nuageux' (1890), les vastes étendues dorées sous un ciel tumultueux incarnent le contraste entre la beauté terrestre et l'agitation céleste. Cette œuvre reflète l'état d'esprit changeant de l'artiste durant ses derniers mois.",
+    9: "Les 'Barques de pêche sur la plage à Saintes-Maries-de-la-Mer' (1888) témoignent de l'attrait de Van Gogh pour la vie maritime. Avec une simplicité touchante, il capture l'essence des petits bateaux colorés reposant sur le sable, symboles de labeur quotidien.",
+    10: "Dans 'Le Semeur' (1888), Van Gogh revisite un thème qui lui était cher. La figure travaillant sous un soleil éclatant illustre sa profonde admiration pour la dignité du travail rural et sa spiritualité liée à la terre nourricière.",
+    11: "Le 'Verger en fleurs (pruniers)' (1888) témoigne de la passion de Van Gogh pour la nature renaissante. Les délicats pruniers en fleurs, traités avec une sensibilité japonisante, expriment l'espoir et le renouveau printanier qui inspiraient l'artiste.",
+    12: "Avec 'Verger en fleurs' (1888), Van Gogh célèbre l'explosion de vie du printemps provençal. Les touches vibrantes et les contrastes lumineux traduisent son émerveillement face à cette renaissance naturelle, symbole d'optimisme après son arrivée dans le Sud.",
+    13: "Dans 'Pêcher en fleurs' (1888), l'artiste capture la délicatesse éphémère des fleurs roses contre le ciel bleu d'Arles. Cette œuvre inspirée par l'art japonais reflète son désir de saisir la beauté fugace de la nature en plein épanouissement.",
+    14: "Les 'Peupliers près de Nuenen' (1884) appartiennent à sa période hollandaise. Ces arbres élancés aux silhouettes sombres et élégantes révèlent déjà le talent de Van Gogh pour transformer un paysage ordinaire en composition poétique et rythmée.",
+    15: "Le 'Pont de Trinquetaille' (1888) représente l'un des ponts d'Arles avec une perspective audacieuse. Les couleurs vives et contrastées traduisent la lumière méridionale qui fascina tant l'artiste, transformant cette structure ordinaire en vision saisissante.",
+    16: "Dans 'Le Semeur au soleil couchant' (1888), Van Gogh fusionne symbolisme et observation. La silhouette du semeur se détachant sur le soleil déclinant évoque le cycle éternel de la vie, thème spirituel récurrent dans l'œuvre de l'artiste.",
+  };
+  return descriptions[id] || `Description de la peinture ${id}`;
+}
+
 export const paintingData = [
   // Front Wall
   ...Array.from({ length: 5 }, (_, i) => ({
@@ -9,9 +32,7 @@ export const paintingData = [
     info: {
       title: getTitleById(i + 1),
       artist: "Vincent van Gogh",
-      description: `C'est l'un des chefs-d'œuvre de Vincent van Gogh, qui illustre son style unique et son honnêteté émotionnelle. ${getTitleById(
-        i + 1
-      )} incarne parfaitement son amour pour la beauté de la vie quotidienne.`,
+      description: getDescriptionById(i + 1),
       year: `Année ${i + 1}`,
       link: "https://github.com/grp-ArtiTechs",
     },
@@ -26,9 +47,7 @@ export const paintingData = [
     info: {
       title: getTitleById(i + 6),
       artist: "Vincent van Gogh",
-      description: `${getTitleById(
-        i + 6
-      )} de Vincent van Gogh est une œuvre exceptionnelle qui témoigne de sa remarquable capacité à capturer l'émotion et l'atmosphère.`,
+      description: getDescriptionById(i + 6),
       year: `Année ${i + 6}`,
       link: "https://github.com/grp-ArtiTechs",
     },
@@ -43,9 +62,7 @@ export const paintingData = [
     info: {
       title: getTitleById(i + 11),
       artist: "Vincent van Gogh",
-      description: `Avec son utilisation saisissante des couleurs et des coups de pinceau, ${getTitleById(
-        i + 11
-      )} est un témoignage du génie artistique de Van Gogh.`,
+      description: getDescriptionById(i + 11),
       year: `Année ${i + 11}`,
       link: "https://github.com/grp-ArtiTechs",
     },
@@ -60,9 +77,7 @@ export const paintingData = [
     info: {
       title: getTitleById(i + 15),
       artist: "Vincent van Gogh",
-      description: `${getTitleById(
-        i + 15
-      )} est une œuvre captivante de Vincent van Gogh, reflétant son style distinctif et sa profonde passion pour l'art.`,
+      description: getDescriptionById(i + 15),
       year: `Année ${i + 15}`,
       link: "https://github.com/grp-ArtiTechs",
     },
