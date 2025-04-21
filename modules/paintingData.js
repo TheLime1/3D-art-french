@@ -9,10 +9,10 @@ export const paintingData = [
     info: {
       title: getTitleById(i + 1),
       artist: "Vincent van Gogh",
-      description: `This is one of the masterpieces by Vincent van Gogh, showcasing his unique style and emotional honesty. ${getTitleById(
+      description: `C'est l'un des chefs-d'œuvre de Vincent van Gogh, qui illustre son style unique et son honnêteté émotionnelle. ${getTitleById(
         i + 1
-      )} perfectly encapsulates his love for the beauty of everyday life.`,
-      year: `Year ${i + 1}`,
+      )} incarne parfaitement son amour pour la beauté de la vie quotidienne.`,
+      year: `Année ${i + 1}`,
       link: "https://github.com/grp-ArtiTechs",
     },
   })),
@@ -28,8 +28,8 @@ export const paintingData = [
       artist: "Vincent van Gogh",
       description: `${getTitleById(
         i + 6
-      )} by Vincent van Gogh is an exceptional piece showcasing his remarkable ability to capture emotion and atmosphere.`,
-      year: `Year ${i + 6}`,
+      )} de Vincent van Gogh est une œuvre exceptionnelle qui témoigne de sa remarquable capacité à capturer l'émotion et l'atmosphère.`,
+      year: `Année ${i + 6}`,
       link: "https://github.com/grp-ArtiTechs",
     },
   })),
@@ -43,15 +43,15 @@ export const paintingData = [
     info: {
       title: getTitleById(i + 11),
       artist: "Vincent van Gogh",
-      description: `With its striking use of color and brushwork, ${getTitleById(
+      description: `Avec son utilisation saisissante des couleurs et des coups de pinceau, ${getTitleById(
         i + 11
-      )} is a testament to Van Gogh's artistic genius.`,
-      year: `Year ${i + 11}`,
+      )} est un témoignage du génie artistique de Van Gogh.`,
+      year: `Année ${i + 11}`,
       link: "https://github.com/grp-ArtiTechs",
     },
   })),
-  // Right Wall
-  ...Array.from({ length: 4 }, (_, i) => ({
+  // Right Wall - Reduced from 4 to 2 paintings (removing #17 and #18)
+  ...Array.from({ length: 2 }, (_, i) => ({
     imgSrc: `artworks/${i + 15}.jpg`,
     width: 5,
     height: 3,
@@ -62,8 +62,8 @@ export const paintingData = [
       artist: "Vincent van Gogh",
       description: `${getTitleById(
         i + 15
-      )} is a captivating piece by Vincent van Gogh, reflecting his distinctive style and deep passion for art.`,
-      year: `Year ${i + 15}`,
+      )} est une œuvre captivante de Vincent van Gogh, reflétant son style distinctif et sa profonde passion pour l'art.`,
+      year: `Année ${i + 15}`,
       link: "https://github.com/grp-ArtiTechs",
     },
   })),
