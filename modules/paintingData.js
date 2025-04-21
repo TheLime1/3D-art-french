@@ -17,6 +17,8 @@ function getDescriptionById(id) {
     14: "Les 'Peupliers près de Nuenen' (1884) appartiennent à sa période hollandaise. Ces arbres élancés aux silhouettes sombres et élégantes révèlent déjà le talent de Van Gogh pour transformer un paysage ordinaire en composition poétique et rythmée.",
     15: "Le 'Pont de Trinquetaille' (1888) représente l'un des ponts d'Arles avec une perspective audacieuse. Les couleurs vives et contrastées traduisent la lumière méridionale qui fascina tant l'artiste, transformant cette structure ordinaire en vision saisissante.",
     16: "Dans 'Le Semeur au soleil couchant' (1888), Van Gogh fusionne symbolisme et observation. La silhouette du semeur se détachant sur le soleil déclinant évoque le cycle éternel de la vie, thème spirituel récurrent dans l'œuvre de l'artiste.",
+    17: "'La Moisson' (1888) illustre la passion de Van Gogh pour les cycles agricoles provençaux. Les gerbes de blé dorées sous le soleil ardent d'été évoquent l'abondance et la vitalité de la nature, tandis que le travail des paysans témoigne de son profond respect pour la vie rurale.",
+    18: "Peint en 1889, 'Champ de blé avec faucheur' présente une figure solitaire travaillant dans l'immensité dorée. Pour Van Gogh, le faucheur symbolise la mort qui récolte, métaphore puissante qu'il explore dans ses dernières œuvres avec une sérénité troublante.",
   };
   return descriptions[id] || `Description de la peinture ${id}`;
 }
@@ -33,7 +35,7 @@ export const paintingData = [
       title: getTitleById(i + 1),
       artist: "Vincent van Gogh",
       description: getDescriptionById(i + 1),
-      year: `Année ${i + 1}`,
+      year: `${i + 1}`,
       link: "https://github.com/grp-ArtiTechs",
     },
   })),
@@ -48,7 +50,7 @@ export const paintingData = [
       title: getTitleById(i + 6),
       artist: "Vincent van Gogh",
       description: getDescriptionById(i + 6),
-      year: `Année ${i + 6}`,
+      year: `${i + 6}`,
       link: "https://github.com/grp-ArtiTechs",
     },
   })),
@@ -63,12 +65,12 @@ export const paintingData = [
       title: getTitleById(i + 11),
       artist: "Vincent van Gogh",
       description: getDescriptionById(i + 11),
-      year: `Année ${i + 11}`,
+      year: `${i + 11}`,
       link: "https://github.com/grp-ArtiTechs",
     },
   })),
-  // Right Wall - Reduced from 4 to 2 paintings (removing #17 and #18)
-  ...Array.from({ length: 2 }, (_, i) => ({
+  // Right Wall - Restored to 4 paintings (including #17 and #18)
+  ...Array.from({ length: 4 }, (_, i) => ({
     imgSrc: `artworks/${i + 15}.jpg`,
     width: 5,
     height: 3,
@@ -78,7 +80,7 @@ export const paintingData = [
       title: getTitleById(i + 15),
       artist: "Vincent van Gogh",
       description: getDescriptionById(i + 15),
-      year: `Année ${i + 15}`,
+      year: `${i + 15}`,
       link: "https://github.com/grp-ArtiTechs",
     },
   })),
