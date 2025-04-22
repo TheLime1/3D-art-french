@@ -1,92 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
 
-    <title>3D Art Gallery</title>
+<head>
+  <meta charset="utf-8" />
 
-    <link rel="stylesheet" href="./style.css" />
-  </head>
+  <title>3D Art Gallery</title>
 
-  <body>
-    <div id="menu">
-      <div id="img_container">
-        <div id="starry_night_bg"></div>
-      </div>
-      <div id="content_container">
-        <div id="content">
-            <div class="title">
-            <h1>Galerie d'Art 3D</h1>
-          </div>          <div class="title-info">
-            <p>Bienvenue dans une expérience immersive de Galerie d'Art 3D.</p>
-            <p>
-              Promenez-vous dans les salles de la galerie virtuelle et découvrez une
-              variété de chefs-d'œuvre, en apprenant leur histoire et leur
-              importance.
-            </p>
-            <p>
-              Développé par ArtiTechs group avec une passion pour donner vie à l'art
-              grâce à la technologie.
-            </p>
-          </div>
+  <link rel="stylesheet" href="./style.css" />
+</head>
 
-          <div id="play_button">
-            <p>EXPLORE ART</p>
-          </div>
-          <div id="about_button_container">
-            <button id="about_button">ABOUT</button>
-          </div>
+<body>
+  <div id="menu">
+    <div id="img_container">
+      <div id="starry_night_bg"></div>
+    </div>
+    <div id="content_container">
+      <div id="content">
+        <div class="title">
+          <h1>Galerie d'Art 3D</h1>
+        </div>
+        <div class="title-info">
+          <p>Bienvenue dans une expérience immersive de Galerie d'Art 3D.</p>
+          <p>
+            Promenez-vous dans les salles de la galerie virtuelle et découvrez une
+            variété de chefs-d'œuvre, en apprenant leur histoire et leur
+            importance.
+          </p>
+          <p>
+            Développé par ArtiTechs group avec une passion pour donner vie à l'art
+            grâce à la technologie.
+          </p>
+        </div>
+
+        <div id="play_button">
+          <p>EXPLORE ART</p>
+        </div>
+        <div id="about_button_container">
+          <button id="about_button">ABOUT</button>
         </div>
       </div>
     </div>
+  </div>
 
-    <div id="about-overlay">
-      <button id="close-about">X</button>
-      <h1>About the 3D Art Gallery</h1>
-      <p>
-        Bienvenue dans notre Galerie d'Art 3D virtuelle. Ici, vous pouvez naviguer à travers une
-        variété d'œuvres d'art merveilleuses et apprendre leur histoire et leur
-        signification.
-      </p>
-      <p>
-        Ce projet vous est présenté par Emilian Kasemi. Nous croyons au
-        pouvoir de l'art d'inspirer, de provoquer la réflexion et de communiquer à travers les
-        cultures et les époques. Notre mission est de rendre l'art accessible à tous,
-        indépendamment de leur lieu ou de leur origine.
-      </p>
-      <p>
-        N'hésitez pas à explorer et à interagir avec les œuvres d'art. La galerie est mieux
-        expérimentée en mode plein écran. Pour une navigation optimale, utilisez les touches
-        fléchées ou les touches W, A, S et D. Vous pouvez également utiliser votre souris pour changer
-        la direction de vue. Des informations supplémentaires sur les œuvres d'art
-        apparaîtront sur votre écran à mesure que vous vous en approchez.
-      </p>
+  <div id="about-overlay">
+    <button id="close-about">X</button>
+    <h1>About the 3D Art Gallery</h1>
+    <p>
+      Bienvenue dans notre Galerie d'Art 3D virtuelle. Ici, vous pouvez naviguer à travers une
+      variété d'œuvres d'art merveilleuses et apprendre leur histoire et leur
+      signification.
+    </p>
+    <p>
+      Ce projet vous est présenté par Emilian Kasemi. Nous croyons au
+      pouvoir de l'art d'inspirer, de provoquer la réflexion et de communiquer à travers les
+      cultures et les époques. Notre mission est de rendre l'art accessible à tous,
+      indépendamment de leur lieu ou de leur origine.
+    </p>
+    <p>
+      N'hésitez pas à explorer et à interagir avec les œuvres d'art. La galerie est mieux
+      expérimentée en mode plein écran. Pour une navigation optimale, utilisez les touches
+      fléchées ou les touches W, A, S et D. Vous pouvez également utiliser votre souris pour changer
+      la direction de vue. Des informations supplémentaires sur les œuvres d'art
+      apparaîtront sur votre écran à mesure que vous vous en approchez.
+    </p>
+  </div>
+
+  <div id="info-panel">
+    <div id="info-header">
+      <h3>Controls</h3>
+      <button id="toggle-info">Hide</button>
     </div>
-
-    <div id="info-panel">
-      <div id="info-header">
-        <h3>Controls</h3>
-        <button id="toggle-info">Hide</button>
-      </div>
-      <div id="info-content">
-        <p><b>W/A/S/D:</b> Move around</p>
-        <p><b>Mouse:</b> Look around</p>
-        <p><b>Space:</b> Toggle pointer lock</p>
-        <p><b>M:</b> Show Menu</p>
-        <p><b>Enter:</b> Start exploration</p>
-        <p><b>Esc:</b> Stop exploration</p>
-        <p><b>G:</b> Start audio guide</p>
-        <p><b>P:</b> Stop audio guide</p>
-      </div>
+    <div id="info-content">
+      <p><b>W/A/S/D:</b> Move around</p>
+      <p><b>Mouse:</b> Look around</p>
+      <p><b>Space:</b> Toggle pointer lock</p>
+      <p><b>M:</b> Show Menu</p>
+      <p><b>Enter:</b> Start exploration</p>
+      <p><b>Esc:</b> Stop exploration</p>
+      <p><b>G:</b> Start audio guide</p>
+      <p><b>P:</b> Stop audio guide</p>
     </div>
+  </div>
 
-    <div id="audio_controls">
-      <button id="start_audio">Start Audio Guide</button>
-      <button id="stop_audio">Stop Audio Guide</button>
-    </div>
+  <div id="audio_controls">
+    <button id="start_audio">Start Audio Guide</button>
+    <button id="stop_audio">Stop Audio Guide</button>
+  </div>
 
-    <div id="painting-info"></div>
+  <div id="painting-info"></div>
 
-    <script type="module" src="/main.js"></script>
-  </body>
+  <script type="module" src="./main.js"></script>
+</body>
+
 </html>
